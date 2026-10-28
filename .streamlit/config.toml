@@ -1,0 +1,7 @@
+# Always use the light theme, even when the computer is in dark mode,
+# so that the dashboard colours stay readable.
+[theme]
+base = "light"
+
+[browser]
+gatherUsageStats = false

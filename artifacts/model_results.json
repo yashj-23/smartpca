@@ -1,0 +1,78 @@
+{
+  "comparison": [
+    {
+      "Model": "Always 'No Failure' (reference)",
+      "Accuracy (%)": 96.6,
+      "Balanced accuracy (%)": 50.0,
+      "Precision (%)": 0.0,
+      "Recall (%)": 0.0,
+      "F1-score (%)": 0.0
+    },
+    {
+      "Model": "Baseline RF - 5 original features",
+      "Accuracy (%)": 98.2,
+      "Balanced accuracy (%)": 85.59,
+      "Precision (%)": 74.24,
+      "Recall (%)": 72.06,
+      "F1-score (%)": 73.13
+    },
+    {
+      "Model": "Baseline RF - PCA (3 PCs)",
+      "Accuracy (%)": 96.8,
+      "Balanced accuracy (%)": 71.39,
+      "Precision (%)": 53.57,
+      "Recall (%)": 44.12,
+      "F1-score (%)": 48.39
+    },
+    {
+      "Model": "Improved SVM - PCA (6 PCs)",
+      "Accuracy (%)": 98.35,
+      "Balanced accuracy (%)": 83.54,
+      "Precision (%)": 80.7,
+      "Recall (%)": 67.65,
+      "F1-score (%)": 73.6
+    }
+  ],
+  "best_params": {
+    "model__C": 300,
+    "model__gamma": 0.05
+  },
+  "best_cv_accuracy": 0.9846250000000001,
+  "cv_comparison": [
+    {
+      "Model": "Random Forest (PCA)",
+      "CV accuracy (%)": 98.05,
+      "Std (%)": 0.46
+    },
+    {
+      "Model": "SVM - RBF kernel (PCA)",
+      "CV accuracy (%)": 97.62,
+      "Std (%)": 0.11
+    }
+  ],
+  "confusion_matrix": [
+    [
+      1921,
+      11
+    ],
+    [
+      22,
+      46
+    ]
+  ],
+  "n_components": 6,
+  "n_features": 9,
+  "variance_retained": 0.9955721258153154,
+  "explained_variance_ratio": [
+    0.33442792927230225,
+    0.2514570750935317,
+    0.19288964625118915,
+    0.11102825667567405,
+    0.08191046387239659,
+    0.023858754650221754,
+    0.003119134695691553,
+    0.0013087394889931497,
+    4.031052117831206e-17
+  ],
+  "test_records": 2000
+}

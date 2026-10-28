@@ -1,0 +1,9 @@
+scikit-learn==1.9.1
+numpy
+pandas
+matplotlib
+seaborn
+joblib
+plotly
+streamlit
+notebook
